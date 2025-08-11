@@ -73,7 +73,7 @@ Enhancing ATS (Applicant Tracking Systems) with AI
 
 
 🙋‍♂️ Author
-Rohitash Bishnoi
-Agentic AI Intern @ Zocket | Ex Intern @ Blu Parrot, Confedo AI, InstaAd, Drooid
-gmail • ✉️ rohitashbishnoi852@gmail.com
+pooja porwal
+Data engineer @ Tredence 
+gmail • ✉️ porwalpooja.2918@gmail.com
 
