@@ -1,79 +1,54 @@
-# Recruiit 🧠💼  
-**A RAG-Based AI Recruitment Assistant**
+Recruiit
+A RAG-Based Resume Screening Project
 
-Recruiit is an intelligent recruitment tool that leverages vector embeddings, rule-based ranking, and external candidate sourcing via the LinkedIn ContactOut API. It enables companies to find the most relevant candidates from an internal database or the web — automatically and intelligently.
+Recruiit is a personal AI project that explores how semantic search and rule-based ranking can be applied to resume screening.
+The system matches internal resumes against a job description using vector embeddings and simple ranking logic.
 
----
+This project was built primarily for learning and experimentation with retrieval-augmented generation (RAG), embeddings, and AI-assisted search workflows.
 
-## 🚀 Features
+Overview
 
-- 🔍 **Semantic Resume Search**: Stores candidate resumes using vector embeddings for context-aware matching.
-- ⚖️ **Rule-Based Ranking**: Candidates are sorted based on customizable rules (e.g., skills, experience, availability).
-- 🌐 **External Candidate Fetching**: If no match is found, it uses the **ContactOut API** to scrape new candidates from LinkedIn.
-- 📊 **Fast & Scalable**: Designed for small to mid-sized recruitment teams or HR tech startups.
+Performs semantic search over resumes using vector embeddings
 
----
+Supports basic resume parsing (PDF and DOCX)
 
-## 🧠 Tech Stack
+Ranks candidates using simple, configurable rules (skills, experience, keywords)
 
-| Tool | Purpose |
-|------|---------|
-| **Python** | Core backend logic |
-| **FAISS / Chroma / SentenceTransformers** | Vector store for resume embeddings |
-| **OpenAI / LLM** | Query parsing and SQL agent |
-| **ContactOut API** | External candidate sourcing |
-| **FastAPI ** | API wrapper  |
+Provides basic explanations for why a resume matches a job description
 
----
+Avoids external candidate sourcing or scraping
 
-## 📂 Folder Structure
+Tech Stack
 
-recruiit/
-│
-├── data/ # Sample resumes / job descriptions
-├── embeddings/ # Vector DB or serialized vectors
-├── recruiter_engine/ # Core logic for matching & ranking
-├── contactout_integration/ # LinkedIn + ContactOut fetch logic
-├── utils/ # Helper functions
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+Python
 
-yaml
-Copy
-Edit
+FAISS and MongoDB
 
----
+SentenceTransformers
 
-## ⚙️ How to Run
+FastAPI
 
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/recruiit.git
-cd recruiit
+PyMuPDF / python-docx
 
-# (Optional) Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate  # For Linux/macOS
-venv\Scripts\activate     # For Windows
 
-# Install dependencies
+
+
+Running the Project
 pip install -r requirements.txt
+uvicorn api.main:app --reload
 
-# Run main script
-python main.py
-📌 Use Cases
-HR agencies seeking to automate resume screening
+Motivation
 
-Startups building AI-powered recruitment platforms
+This project was created to:
 
-Internal tools for enterprise hiring workflows
+Understand RAG-based retrieval pipelines
 
-Enhancing ATS (Applicant Tracking Systems) with AI
+Practice working with vector databases
 
+Apply AI techniques to a realistic resume screening use case
 
+Build a clear, interview-ready personal project
 
-🙋‍♂️ Author
-pooja porwal
-Data engineer @ Tredence 
-gmail • ✉️ porwalpooja.2918@gmail.com
+Author
 
+Pooja Porwal
